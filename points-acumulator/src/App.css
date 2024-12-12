@@ -101,12 +101,6 @@ button:hover {
   background-color: var(--color);
 }
 
-hr {
-  width: 5px;
-  height: 99svh;
-  background-color: white;
-}
-
 .Players2-section {
   justify-content: space-between;
   gap: 20px;

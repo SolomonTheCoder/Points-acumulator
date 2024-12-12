@@ -128,7 +128,6 @@ const PointMain = () => {
               Win count
             </button>
           </div>
-          <hr />
           <div className="Player-2">
             <div className="Player-title">
               <h2>Player 2</h2>
