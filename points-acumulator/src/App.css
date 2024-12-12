@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Righteous&display=swap");
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 51, 139, 1) 62%,
+    rgba(191, 0, 115, 1) 83%
+  );
+}
+
+:root {
+  --header-font: "Courgette";
+  --text-font: "Righteous";
+  --color: #ffbef8;
+}
+
+.App {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadIcon {
+  position: absolute;
+  width: 10%;
+  top: 40%;
+  left: 47%;
+}
+
+.welcome-section {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.welcome-title h1 {
+  font-family: var(--header-font);
+  font-size: 163px;
+  color: var(--color);
+}
+
+.Next {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.NextBtn {
+  width: 60px;
+  height: 60px;
+  padding: 30px;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--text-font);
+  font-size: 25px;
+  background-color: var(--color);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: var(--color);
+  transition: ease-in-out 9ms;
+}
+
+.Player-section {
+  display: none;
+}
+
+.Player-text {
+  margin: 50px 0;
+}
+
+.Player-text h3 {
+  font-family: var(--text-font);
+  color: var(--color);
+  font-size: 30px;
+}
+
+.Player-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Player2Btn,
+.Player4Btn,
+.Player6Btn {
+  width: 60px;
+  height: 60px;
+  padding: 30px;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--text-font);
+  font-size: 18px;
+  background-color: var(--color);
+}
+
+hr {
+  width: 5px;
+  height: 99svh;
+  background-color: white;
+}
+
+.Players2-section {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Player-1,
+.Player-2,
+.Player-3,
+.Player-4,
+.Player-5,
+.Player-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Player-title h2 {
+  font-family: var(--text-font);
+  color: var(--color);
+}
+
+.Player-image {
+  background-color: rgba(126, 126, 126, 0.603);
+  border-radius: 50%;
+  width: 50%;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.Player-image img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.displayPoint {
+  width: 15%;
+  height: 7svh;
+  text-align: center;
+  background-color: white;
+  border-radius: 10%;
+  padding: 6px;
+}
+
+.displayPoint p {
+  font-family: var(--text-font);
+  font-size: 40px;
+}
+
+.winCountBtn {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: var(--text-font);
+  font-size: 20px;
+  background-color: var(--color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .welcome-title h1 {
+    font-size: 120px;
+  }
+
+  .NextBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .Player-text h3 {
+    font-size: 25px;
+  }
+
+  .displayPoint p {
+    font-size: 30px;
+  }
+
+  .winCountBtn {
+    width: 80px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-title h1 {
+    font-size: 80px;
+  }
+
+  .NextBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .Player-text h3 {
+    font-size: 20px;
+  }
+
+  .displayPoint {
+    width: 20%;
+    height: 5svh;
+  }
+
+  .displayPoint p {
+    font-size: 25px;
+  }
+
+  .winCountBtn {
+    width: 70px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-title h1 {
+    font-size: 50px;
+  }
+
+  .NextBtn {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .Player-text h3 {
+    font-size: 18px;
+  }
+
+  .displayPoint {
+    width: 25%;
+    height: 4svh;
+  }
+
+  .displayPoint p {
+    font-size: 20px;
+  }
+
+  .winCountBtn {
+    width: 60px;
+    font-size: 14px;
+  }
+}
