@@ -22,10 +22,7 @@ body {
 }
 
 .loadIcon {
-  position: absolute;
-  width: 10%;
-  top: 40%;
-  left: 47%;
+  width: 20%;
 }
 
 .welcome-section {
@@ -237,21 +234,103 @@ hr {
     font-size: 15px;
   }
 
-  .Player-text h3 {
-    font-size: 18px;
+  .Player-title h2 {
+    font-family: var(--text-font);
+    font-size: 12px;
+    color: var(--color);
+  }
+
+  .Player-image {
+    background-color: rgba(126, 126, 126, 0.603);
+    border-radius: 50%;
+    width: 50%;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .Player-image img {
+    width: 100%;
+    margin: 10px 0;
   }
 
   .displayPoint {
-    width: 25%;
-    height: 4svh;
+    width: 30%;
+    height: 3svh;
   }
 
   .displayPoint p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .winCountBtn {
-    width: 60px;
-    font-size: 14px;
+    width: 30px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .welcome-title h1 {
+    font-size: 30px;
+  }
+
+  .NextBtn {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .Player-text {
+    text-align: center;
+  }
+
+  .Player-text h3 {
+    font-size: 15px;
+  }
+
+  .Player2Btn,
+  .Player4Btn,
+  .Player6Btn {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border: none;
+    border-radius: 100px;
+    font-family: var(--text-font);
+    font-size: 11px;
+    background-color: var(--color);
+  }
+
+  .Player-title h2 {
+    font-family: var(--text-font);
+    font-size: 12px;
+    color: var(--color);
+  }
+
+  .Player-image {
+    background-color: rgba(126, 126, 126, 0.603);
+    border-radius: 50%;
+    width: 50%;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .Player-image img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .displayPoint {
+    width: 30%;
+    height: 3svh;
+  }
+
+  .displayPoint p {
+    font-size: 15px;
+  }
+
+  .winCountBtn {
+    width: 30px;
+    font-size: 12px;
   }
 }
